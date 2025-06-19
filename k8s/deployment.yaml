@@ -6,7 +6,7 @@ metadata:
     app: client
   name: client
 spec:
-  replicas: 4
+  replicas: 2
   selector:
     matchLabels:
       app: client
@@ -18,7 +18,7 @@ spec:
         app: client
     spec:
       containers:
-      - image: nginx
+      - image: aakkiiff/hecker:0.2
         name: nginx
         resources: {}
 status: {}
